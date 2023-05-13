@@ -1,0 +1,19 @@
+# Archivos generados por Node.js
+node_modules/
+npm-debug.log
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos generados por editores de texto
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.vscode/
+.vs/
+
+# Otros archivos o directorios que quieres excluir
+archivo-secreto.txt
