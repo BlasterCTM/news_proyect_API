@@ -1,10 +1,12 @@
 const express = require('express');
+
 const app = express();
 const bodyParser = require("body-parser");
-const routes = require('./controllers/newsController')
+const routes = require('./app/routes/index');
+
 
 app.use(bodyParser.json());
-app.use('/', routes);
+app.use('/', require('./app/routes'));
 
 app.listen(3300, ()=>{
     console.log("Sever is now listening at port 3300");
