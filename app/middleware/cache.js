@@ -5,7 +5,7 @@ const defaultOptions = {
     defaultTtl: '15 minute',
     statusCodeExpires: {
         404: '5 minutes',
-        500: 0 // 1 minute in milliseconds
+        500: 0 // 1 minuto
     }
 }
 
