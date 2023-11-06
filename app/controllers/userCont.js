@@ -105,48 +105,6 @@ const login = async (req, res) => {
     
 }
 
-// const login = async (req, res) => {
-//     const { email, pass } = req.body;
-
-//     if (!email || !pass) {
-//         return res.status(400).json({
-//             message: "Por favor ingrese todos los campos"
-//         });
-//     }
-
-//     try {
-//         const user = await userRepository.getUserByEmail(email.trim());
-
-//         if (!user) {
-//             return res.status(401).json({
-//                 message: "Credenciales inválidas."
-//             });
-//         }
-
-//         const passwordMatch = await comparePasswords(pass, user.pass);
-
-//         if (!passwordMatch) {
-//             return res.status(401).json({
-//                 message: "Credenciales inválidas."
-//             });
-//         }
-
-//         const token = generateToken(user);
-
-//         return res.status(200).json({
-//             message: "Inicio de sesión exitoso.",
-//             data: {
-//                 token,
-//                 user
-//             }
-//         });
-//     } catch (error) {
-//         return res.status(500).json({
-//             message: "Error al intentar iniciar sesión.",
-//             error: error.message
-//         });
-//     }
-// };
 module.exports = { createUser, login };
 
   

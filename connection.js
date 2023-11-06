@@ -1,20 +1,13 @@
 const {Pool} = require('pg')
 
 
-//CONEXION CON ORM SEQUELIZE 
-// const { Sequelize } = require('sequelize');
-// const sequelize = new Sequelize('news_db', 'postgres', 'postgres', {
-//   host: 'localhost',
-//   dialect: 'postgres'
-// });
-
 //CONEXION NO ORN - PERMITE QUERYS DE SQL
 const client = new Pool({
-    host: "localhost",
+    host: "rds-game-connect.chvuxlhkl8lq.us-east-2.rds.amazonaws.com",
     user: "postgres",
     port: 5432,
     password: "postgres",
-    database: "news_db"
+    database: "game_connectAPI"
 })
 
 module.exports = client;

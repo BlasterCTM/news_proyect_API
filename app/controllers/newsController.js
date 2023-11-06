@@ -29,7 +29,7 @@ const createNews = async (req, res) => {
 };
 
 //1
-//TODO: ACTUALIZA UNA NOTICIA 
+// ACTUALIZA UNA NOTICIA 
 //Crear un metodo con router.put
 
 const updateNews =  async (req, res) => {
